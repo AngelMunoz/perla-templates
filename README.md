@@ -9,3 +9,11 @@ dotnet tool restore
 dotnet perla serve
 ```
 visit [localhost:7331](http://localhost:7331/)
+
+## Build for prod
+For prod just run
+
+```
+dotnet perla build
+```
+your ready to go packages should be in the "dist" directory afterwards, feel free to deploy them where you feel it's better!
