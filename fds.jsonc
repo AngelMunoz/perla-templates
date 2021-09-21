@@ -1,0 +1,23 @@
+{
+  "index": "./index.html",
+  "devServer": {
+    "autoStart": true,
+    "port": 7331,
+    "mountDirectories": {
+      "./src": "/src"
+    },
+    "useSSL": false
+  },
+  "build": {
+    "esbuildVersion": "0.12.28",
+    "target": "es2015",
+    "outDir": "./dist",
+    "bundle": true,
+    "format": "esm",
+    "minify": true
+  },
+  "packages": {
+    "fsharp-components": "https://cdn.skypack.dev/fsharp-components",
+    "lit": "https://cdn.skypack.dev/lit"
+  }
+}
