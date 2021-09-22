@@ -1,12 +1,13 @@
 {
-  "fsharp-components": {
-    "lookUp": "fsharp-components",
-    "pin": "https://cdn.skypack.dev/pin/fsharp-components@v0.0.4-vrcdq1fAiAHCYER7N99I/mode=imports/optimized/fsharp-components.js",
-    "import": "https://cdn.skypack.dev/-/fsharp-components@v0.0.4-vrcdq1fAiAHCYER7N99I/dist=es2020,mode=imports/optimized/fsharp-components.js"
+  "imports": {
+    "fsharp-components": "https://cdn.skypack.dev/pin/fsharp-components@v0.0.4-vrcdq1fAiAHCYER7N99I/mode=imports/optimized/fsharp-components.js",
+    "lit": "https://ga.jspm.io/npm:lit@2.0.0/index.js"
   },
-  "lit": {
-    "lookUp": "lit",
-    "pin": "https://cdn.skypack.dev/pin/lit@v2.0.0-fmIQPXLJVWh8dPhS7nD3/mode=imports/optimized/lit.js",
-    "import": "https://cdn.skypack.dev/-/lit@v2.0.0-fmIQPXLJVWh8dPhS7nD3/dist=es2020,mode=imports/optimized/lit.js"
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.0.0-rc.3/reactive-element.js",
+      "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.0.0-rc.4/lit-element.js",
+      "lit-html": "https://ga.jspm.io/npm:lit-html@2.0.0-rc.5/lit-html.js"
+    }
   }
 }
