@@ -18,6 +18,7 @@ class MyApp extends LitElement {
             <fs-message kind="danger" header="Look Ma' No complicated setup!">
                 <h3>Hello there!</h3>
                 <p>No local dependencies, all is on the cloud!</p>
+                <p>Now with LiveReload!</p>
             </fs-message>
         </article>
         `

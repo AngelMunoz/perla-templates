@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/main/perla.schema.json",
   "index": "./index.html",
   "devServer": {
+    "liveReload": true,
     "mountDirectories": {
       "./src": "/src"
     }
