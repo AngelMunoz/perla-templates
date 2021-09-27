@@ -9,6 +9,7 @@
   },
   "build": {
     "target": "es2017",
+    "esbuildVersion": "0.13.2",
     "bundle": true,
     "minify": true
   },

@@ -1,6 +1,6 @@
+import './index.css'
 import { LitElement, html } from 'lit'
 import { registerAll } from 'fsharp-components'
-import styles from './styles.css' assert { type: 'css' };
 registerAll()
 class MyApp extends LitElement {
     render() {
@@ -22,10 +22,6 @@ class MyApp extends LitElement {
             </fs-message>
         </article>
         `
-    }
-
-    static get styles() {
-        return [styles]
     }
 
     static get properties() {
