@@ -1,4 +1,5 @@
 import './index.css'
+import './styles.css'
 import { LitElement, html } from 'lit'
 import { registerAll } from 'fsharp-components'
 registerAll()
@@ -6,7 +7,7 @@ class MyApp extends LitElement {
     render() {
         return html`
         <article>
-            <header>
+            <header class="my-header">
                 <button @click=${() => this.menuOpen = !this.menuOpen}>Menu</button>
                 <fs-off-canvas closable ?is-open=${this.menuOpen} @fs-close-off-canvas=${() => this.menuOpen = false}>
                     <ul>
@@ -32,6 +33,8 @@ class MyApp extends LitElement {
         super()
         this.menuOpen = false
     }
+
+    createRenderRoot() { return this }
 }
 
 customElements.define("my-app", MyApp)
