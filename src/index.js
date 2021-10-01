@@ -2,6 +2,8 @@ import './index.css'
 import './styles.css'
 import { LitElement, html } from 'lit'
 import { registerAll } from 'fsharp-components'
+import todos from './todos.json'
+
 registerAll()
 class MyApp extends LitElement {
     render() {
@@ -16,6 +18,9 @@ class MyApp extends LitElement {
                     </ul>
                 </fs-off-canvas>
             </header>
+            <ul>
+                ${todos.map(todo => html`<li>${todo.title} - ${todo.done ? "Done" : "Pending "}</li>`)}
+            </ul>
             <fs-message kind="danger" header="Look Ma' No complicated setup!">
                 <h3>Hello there!</h3>
                 <p>No local dependencies, all is on the cloud!</p>
