@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/esbuild-middleware/perla.schema.json",
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.12.1/perla.schema.json",
   "index": "./index.html",
   "devServer": {
     "liveReload": true,
