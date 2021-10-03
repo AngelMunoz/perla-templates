@@ -7,12 +7,6 @@
       "./src": "/src"
     }
   },
-  "build": {
-    "target": "es2017",
-    "esbuildVersion": "0.13.2",
-    "bundle": true,
-    "minify": true
-  },
   "packages": {
     "fsharp-components": "https://cdn.skypack.dev/pin/fsharp-components@v0.0.4-vrcdq1fAiAHCYER7N99I/mode=imports/optimized/fsharp-components.js",
     "lit": "https://ga.jspm.io/npm:lit@2.0.0/index.js"

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/esbuild-middleware/perla.schema.json",
+  "index": "./index.html",
+  "devServer": {
+    "liveReload": true,
+    "mountDirectories": {
+      "./src": "/src"
+    }
+  },
+  "build": {
+    "jsxFactory": "h",
+    "jsxFragment": "Fragment",
+    "injects": [
+      "./preact-shim.js"
+    ]
+  },
+  "packages": {
+    "preact": "https://cdn.skypack.dev/pin/preact@v10.5.14-NU6DIzRE0F11UYcL6Ija/mode=imports/optimized/preact.js"
+  }
+}

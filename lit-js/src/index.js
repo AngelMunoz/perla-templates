@@ -1,10 +1,10 @@
-import './index.css'
-import './styles.css'
-import { LitElement, html } from 'lit'
-import { registerAll } from 'fsharp-components'
-import todos from './todos.json'
+import './index.css';
+import './styles.css';
+import { LitElement, html } from 'lit';
+import { registerAll } from 'fsharp-components';
+import todos from './todos.json';
 
-registerAll()
+registerAll();
 class MyApp extends LitElement {
     render() {
         return html`
@@ -27,19 +27,19 @@ class MyApp extends LitElement {
                 <p>Now with LiveReload!</p>
             </fs-message>
         </article>
-        `
+        `;
     }
 
     static get properties() {
-        return { menuOpen: { state: true } }
+        return { menuOpen: { state: true } };
     }
 
     constructor() {
-        super()
-        this.menuOpen = false
+        super();
+        this.menuOpen = false;
     }
 
-    createRenderRoot() { return this }
+    createRenderRoot() { return this; }
 }
 
-customElements.define("my-app", MyApp)
+customElements.define("my-app", MyApp);
