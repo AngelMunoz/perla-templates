@@ -7,6 +7,12 @@
       "commands": [
         "perla"
       ]
+    },
+    "fable": {
+      "version": "3.4.0",
+      "commands": [
+        "fable"
+      ]
     }
   }
 }
