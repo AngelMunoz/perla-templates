@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.12.1/perla.schema.json",
+  "index": "./index.html",
+  "fable": {
+    "project": "./src/App.fsproj"
+  },
+  "devServer": {
+    "mountDirectories": {
+      "./src": "/src"
+    },
+    "liveReload": true
+  },
+  "packages": {
+    "date-fns": "https://cdn.skypack.dev/pin/date-fns@v2.24.0-xQUlibW9ps42zKzmeWcn/mode=imports/optimized/date-fns.js",
+    "react": "https://cdn.skypack.dev/pin/react@v17.0.1-yH0aYV1FOvoIPeKBbHxg/mode=imports/optimized/react.js",
+    "react-dom": "https://cdn.skypack.dev/pin/react-dom@v17.0.1-oZ1BXZ5opQ1DbTh7nu9r/mode=imports/optimized/react-dom.js"
+  }
+}
