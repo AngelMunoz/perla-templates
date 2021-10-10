@@ -2,7 +2,7 @@ import './index.css';
 import './styles.css';
 import { LitElement, html } from 'lit';
 import { registerAll } from 'fsharp-components';
-import todos from './todos.json';
+import todos from './todos.json?module';
 
 registerAll();
 class MyApp extends LitElement {
