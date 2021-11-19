@@ -454,3 +454,6 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 dist/
+
+*.fs.js
+*.fs.js.map
