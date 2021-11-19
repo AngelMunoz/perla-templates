@@ -1,4 +1,4 @@
-# Perla + Feliz Template
+# Perla + Sutil
 
 Visit the Perla Docs at https://perla-docs.web.app
 

@@ -1,19 +1,41 @@
-# Node'less web development
-[Perla]: https://github.com/AngelMunoz/Perla
+# Javascript + Perla
 
-A testing repo for [Perla] for pure HTML/CSS/JS projects
+[perla]: https://github.com/AngelMunoz/Perla
+
+Visit the Perla Docs at https://perla-docs.web.app
 
 ## Getting Started
-```
-dotnet tool restore
-dotnet perla serve
-```
-visit [localhost:7331](http://localhost:7331/)
 
-## Build for prod
-For prod just run
+> If you don't have [Perla] installed, follow the instructions here
+> https://perla-docs.web.app/#/content/install
 
+## Development
+
+open a terminal into your project directory and simply type
+
+- `perla serve`
+
+## Build
+
+open a terminal into your project directory and simply type
+
+- `perla build`
+
+## Install dependencies
+
+open a terminal into your project directory and simply type
+
+- `perla add -p <Dependency>`, example: `perla add -p lodash`
+- `perla add -p lodash@3 --alias lodash-three`
+
+you will be able to import as the following in your code
+
+```javascript
+import _ from "lodash";
+import _3 from "lodash-three";
 ```
-dotnet perla build
-```
-your ready to go packages should be in the "dist" directory afterwards, feel free to deploy them where you feel it's better!
+
+To remove dependencies just change `add` to `remove`
+
+- `perla remove -p <Dependency>`, example: `perla remove -p lodash`
+- `perla remove -p lodash@3`
