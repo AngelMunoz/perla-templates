@@ -6,8 +6,19 @@ Playground and samples for [Perla] projects, currently supporting js, jsx, ts, t
 
 ## Getting Started
 
-You can clone the whole project and restore from the root OR just copy a single folder and restore from it
+If you need to install perla check the [Installation instructions](https://perla-docs.web.app/#/content/install)
 
+You can clone the whole project and restore from the root OR just copy a single folder and run perla from it
+
+Example:
+
+```
+cd lit-js
+perla serve
+```
+
+
+## .NET Users
 ```
 dotnet tool restore
 dotnet perla serve
