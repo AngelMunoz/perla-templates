@@ -2,9 +2,9 @@
 
 
 open Sutil
+open Fable.Core.JsInterop
 
 importSideEffects "./styles.css"
 
-registerAll ()
 // Start the app
 App.view () |> Program.mountElement "fable-app"
