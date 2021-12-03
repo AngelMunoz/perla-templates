@@ -2,10 +2,7 @@
 
 
 open Sutil
-open Fable.Core.JsInterop
 
-let registerAll: unit -> unit = importMember "fsharp-components"
-importSideEffects "./lit.js"
 importSideEffects "./styles.css"
 
 registerAll ()

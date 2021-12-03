@@ -3,15 +3,21 @@
   "isRoot": true,
   "tools": {
     "perla": {
-      "version": "0.17.0",
+      "version": "0.18.0",
       "commands": [
         "perla"
       ]
     },
     "fable": {
-      "version": "3.6.0",
+      "version": "3.6.3",
       "commands": [
         "fable"
+      ]
+    },
+    "fantomas-tool": {
+      "version": "4.6.0-alpha-004",
+      "commands": [
+        "fantomas"
       ]
     }
   }

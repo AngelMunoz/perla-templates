@@ -1,6 +1,5 @@
 {
   "imports": {
-    "fsharp-components": "https://cdn.skypack.dev/pin/fsharp-components@v0.0.4-vrcdq1fAiAHCYER7N99I/mode=imports/optimized/fsharp-components.js",
     "lit": "https://ga.jspm.io/npm:lit@2.0.0/index.js"
   },
   "scopes": {

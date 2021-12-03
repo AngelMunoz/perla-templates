@@ -1,45 +1,59 @@
 import './index.css';
 import './styles.css';
 import { LitElement, html } from 'lit';
-import { registerAll } from 'fsharp-components';
 import todos from './todos.json?module';
 
-registerAll();
+
 class MyApp extends LitElement {
+
+    constructor() {
+        this.mouseCtrl = new MouseController(this);
+    }
+
     render() {
         return html`
         <article>
-            <header class="my-header">
-                <button @click=${() => this.menuOpen = !this.menuOpen}>Menu</button>
-                <fs-off-canvas closable ?is-open=${this.menuOpen} @fs-close-off-canvas=${() => this.menuOpen = false}>
-                    <ul>
-                        <li>Yup, using npm dependencies</li>
-                        <li>Without Node and Npm!</li>
-                    </ul>
-                </fs-off-canvas>
-            </header>
+            <h1>Hello, World!</h1>
+            <p>Your mouse is at: (${this.mouseCtrl.x}, ${this.mouseCtrl.y})</p>
             <ul>
                 ${todos.map(todo => html`<li>${todo.title} - ${todo.done ? "Done" : "Pending "}</li>`)}
             </ul>
-            <fs-message kind="danger" header="Look Ma' No complicated setup!">
-                <h3>Hello there!</h3>
-                <p>No local dependencies, all is on the cloud!</p>
-                <p>Now with LiveReload!</p>
-            </fs-message>
         </article>
         `;
     }
-
-    static get properties() {
-        return { menuOpen: { state: true } };
-    }
-
-    constructor() {
-        super();
-        this.menuOpen = false;
-    }
-
-    createRenderRoot() { return this; }
 }
+
+export class MouseController {
+
+    constructor(host) {
+        this.host = host;
+        host.addController(this);
+        this.x = 0;
+        this.y = 0;
+    }
+
+    _updatePosition =
+        /**
+         *
+         * @param {MouseEvent} event
+         */
+        (event) => {
+            this.x = event.x;
+            this.y = event.y;
+            this.host.requestUpdate();
+        };
+
+    hostConnected() {
+        window.addEventListener('mousemove', this._updatePosition);
+    }
+
+    hostDisconnected() {
+        window.removeEventListener('mousemove', this._updatePosition);
+    }
+
+}
+
+
+
 
 customElements.define("my-app", MyApp);
