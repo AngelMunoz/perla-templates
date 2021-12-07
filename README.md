@@ -7,7 +7,8 @@ This repository is now part of Perla's [scaffolding features](https://perla-docs
 
 usage example:
 
-```
+```sh
+# run once after installing perla for the first time
 perla init -k full
 perla new -t perla-samples/vue-jsx -n my-vue-project
 cd my-vue-project
