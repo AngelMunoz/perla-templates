@@ -10,7 +10,9 @@ usage example:
 ```sh
 # run once after installing perla for the first time
 perla init -k full
+# once templates are downloaded you can run
 perla new -t perla-samples/vue-jsx -n my-vue-project
 cd my-vue-project
 perla serve
 ```
+
