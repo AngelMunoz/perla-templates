@@ -1,12 +1,20 @@
 import './index.css';
-import './styles.css';
+//@ts-ignore
 import { LitElement, html } from 'lit';
+//@ts-ignore
 import todos from './todos.json?module';
+
+/**
+ * Renders a simple todo on the screen
+ * @param {Todo} todo 
+ */
+const todoTpl = todo => html`<li>${todo.title} - ${todo.done ? "Done" : "Pending"}</li>`;
 
 
 class MyApp extends LitElement {
 
     constructor() {
+        super();
         this.mouseCtrl = new MouseController(this);
     }
 
@@ -16,7 +24,7 @@ class MyApp extends LitElement {
             <h1>Hello, World!</h1>
             <p>Your mouse is at: (${this.mouseCtrl.x}, ${this.mouseCtrl.y})</p>
             <ul>
-                ${todos.map(todo => html`<li>${todo.title} - ${todo.done ? "Done" : "Pending "}</li>`)}
+                ${todos.map(todoTpl)}
             </ul>
         </article>
         `;
@@ -55,5 +63,5 @@ export class MouseController {
 
 
 
-
+//@ts-ignore
 customElements.define("my-app", MyApp);
