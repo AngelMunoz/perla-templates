@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "checkJs": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": false,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "module": "ESNext",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src"
+    ],
+    "typeAcquisition": {
+        "enable": true
+    }
+}
