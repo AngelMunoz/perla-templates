@@ -1,8 +1,8 @@
 {
   "imports": {
     "solid-js": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js.js",
-    "solid-js/web": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js/web/dist/web.js",
-    "solid-js/html": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js/html/dist/html.js",
+    "solid-js/web": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js/web.js",
+    "solid-js/html": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js/html.js",
   },
   "scopes": {}
 }
