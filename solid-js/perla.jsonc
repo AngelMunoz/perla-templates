@@ -7,6 +7,13 @@
     },
     "liveReload": true
   },
+  "build": {
+    "copyPaths": {
+      "includes": [
+        "./src/todos.json"
+      ]
+    }
+  },
   "packages": {
     "solid-js": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js.js"
   }

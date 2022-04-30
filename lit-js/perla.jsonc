@@ -7,6 +7,13 @@
       "./src": "/src"
     }
   },
+  "build": {
+    "copyPaths": {
+      "includes": [
+        "./src/todos.json"
+      ]
+    }
+  },
   "packages": {
     "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js"
   }

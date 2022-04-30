@@ -6,5 +6,12 @@
     "mountDirectories": {
       "./src": "/src"
     }
+  },
+  "build": {
+    "copyPaths": {
+      "includes": [
+        "./src/todos.json"
+      ]
+    }
   }
 }
