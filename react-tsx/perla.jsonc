@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.13.0/perla.schema.json",
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.20.1/perla.schema.json",
   "index": "./index.html",
   "devServer": {
     "liveReload": true,

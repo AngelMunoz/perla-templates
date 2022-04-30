@@ -7,8 +7,8 @@
         <Compile Include="Main.fs" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Feliz" Version="1.57.0" />
+        <PackageReference Include="Feliz" Version="1.62.0" />
         <PackageReference Include="Feliz.Router" Version="3.8.0" />
-        <PackageReference Include="Fable.DateFunctions" Version="3.8.1" />
+        <PackageReference Include="Fable.DateFunctions" Version="3.9.0" />
     </ItemGroup>
 </Project>

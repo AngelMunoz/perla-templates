@@ -1,12 +1,12 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/main/perla.schema.json",
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.20.1/perla.schema.json",
   "index": "./index.html",
   "fable": {
     "autoStart": true,
     "project": "./src/App.fsproj"
   },
   "packages": {
-    "lit": "https://cdn.skypack.dev/pin/lit@v2.0.2-78IU6uYV3lBYFK6qpY9H/mode=imports/optimized/lit.js",
-    "lit-html": "https://cdn.skypack.dev/pin/lit-html@v2.0.2-JE82jsjodaQGh1EnJO4l/mode=imports/optimized/lit-html.js"
+    "lit": "https://cdn.skypack.dev/pin/lit@v2.2.3-IwwYkJyh70OoYX9M4m5k/mode=imports,min/optimized/lit.js",
+    "lit-html": "https://cdn.skypack.dev/pin/lit-html@v2.2.3-xm7mKfzpHOFeww3lxxRH/mode=imports,min/optimized/lit-html.js"
   }
 }

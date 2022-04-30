@@ -1,7 +1,7 @@
 {
   "imports": {
-    "lit": "https://cdn.skypack.dev/pin/lit@v2.0.2-78IU6uYV3lBYFK6qpY9H/mode=imports/optimized/lit.js",
-    "lit/": "https://cdn.skypack.dev/pin/lit@v2.0.2-78IU6uYV3lBYFK6qpY9H/mode=imports/optimized/lit/"
+    "lit": "https://cdn.skypack.dev/pin/lit@v2.2.3-IwwYkJyh70OoYX9M4m5k/mode=imports,min/optimized/lit.js",
+    "lit/": "https://cdn.skypack.dev/pin/lit@v2.2.3-IwwYkJyh70OoYX9M4m5k/mode=imports,min/optimized/"
   },
   "scopes": {}
 }

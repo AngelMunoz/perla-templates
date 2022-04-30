@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.13.0/perla.schema.json",
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.20.1/perla.schema.json",
   "index": "./index.html",
   "devServer": {
     "liveReload": true,
@@ -8,6 +8,6 @@
     }
   },
   "packages": {
-    "lit": "https://ga.jspm.io/npm:lit@2.0.0/index.js"
+    "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js"
   }
 }

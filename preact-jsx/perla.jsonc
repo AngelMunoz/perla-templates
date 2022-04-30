@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.13.0/perla.schema.json",
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.20.1/perla.schema.json",
   "index": "./index.html",
   "devServer": {
     "liveReload": true,
@@ -15,6 +15,6 @@
     ]
   },
   "packages": {
-    "preact": "https://cdn.skypack.dev/pin/preact@v10.5.14-NU6DIzRE0F11UYcL6Ija/mode=imports/optimized/preact.js"
+    "preact": "https://cdn.skypack.dev/pin/preact@v10.7.1-CXcphf8iRlm3GJGwMcQa/mode=imports,min/optimized/preact.js"
   }
 }
