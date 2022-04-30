@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.20.1/perla.schema.json",
+  "index": "./index.html",
+  "devServer": {
+    "mountDirectories": {
+      "./src": "/src"
+    },
+    "liveReload": true
+  },
+  "packages": {
+    "solid-js": "https://cdn.skypack.dev/pin/solid-js@v1.3.17-7QAecKUORuE2QzxLD3SV/mode=imports,min/optimized/solid-js.js"
+  }
+}
