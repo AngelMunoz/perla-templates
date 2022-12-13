@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "lit": "https://cdn.skypack.dev/pin/lit@v2.2.3-IwwYkJyh70OoYX9M4m5k/mode=imports,min/optimized/lit.js",
-    "lit/": "https://cdn.skypack.dev/pin/lit@v2.2.3-IwwYkJyh70OoYX9M4m5k/mode=imports,min/optimized/lit/",
-    "lit/directives/": "https://cdn.skypack.dev/pin/lit@v2.2.3-IwwYkJyh70OoYX9M4m5k/mode=imports,min/optimized/lit/directives/"
-  },
-  "scopes": {}
-}
