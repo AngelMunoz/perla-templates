@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.5.0/reactive-element.js",
+    "lit": "https://ga.jspm.io/npm:lit@2.5.0/index.js",
+    "lit/": "https://ga.jspm.io/npm:lit@2.5.0/",
+    "lit/directives/": "https://ga.jspm.io/npm:lit-html@2.5.0/directives/",
+    "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.2/lit-element.js",
+    "lit-html": "https://ga.jspm.io/npm:lit-html@2.5.0/lit-html.js",
+    "lit-html/": "https://ga.jspm.io/npm:lit-html@2.5.0/",
+    "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.5.0/is-server.js"
+  }
+}

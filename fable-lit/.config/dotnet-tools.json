@@ -3,13 +3,13 @@
   "isRoot": true,
   "tools": {
     "perla": {
-      "version": "0.21.0",
+      "version": "1.0.0-beta-007",
       "commands": [
         "perla"
       ]
     },
     "fable": {
-      "version": "3.7.10",
+      "version": "4.0.0-theta-018",
       "commands": [
         "fable"
       ]

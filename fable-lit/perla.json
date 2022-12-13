@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/dev/perla.schema.json",
+  "index": "./index.html",
+  "provider": "jspm",
+  "runConfiguration": "production",
+  "fable": {
+    "project": "./src/App.fsproj"
+  },
+  "dependencies": [
+    {
+      "name": "lit",
+      "version": "2.5.0"
+    },
+    {
+      "name": "lit-html",
+      "version": "2.5.0"
+    }
+  ],
+  "devDependencies": []
+}
