@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/dev/perla.schema.json",
+  "index": "./index.html",
+  "mountDirectories": {
+    "/src": "./src"
+  },
+  "esbuild": {
+    "jsxAutomatic": false
+  },
+  "dependencies": [
+    {
+      "name": "vue",
+      "version": "3.2.45"
+    }
+  ],
+  "devDependencies": []
+}

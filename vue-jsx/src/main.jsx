@@ -1,6 +1,8 @@
-import { createApp } from "vue";
-import { App } from "./app.jsx";
 import "./index.css";
+//@ts-ignore
+import { createApp, h } from "vue";
+
+import { App } from "./app.js";
 
 const app = createApp({
   render() {

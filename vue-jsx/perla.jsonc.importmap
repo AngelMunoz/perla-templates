@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "vue": "https://cdn.skypack.dev/pin/vue@v3.2.22-ADhoiepkqZzWxHvjJF6y/mode=imports,min/optimized/vue.js"
-  },
-  "scopes": {}
-}
