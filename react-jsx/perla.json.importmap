@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "process": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.27/nodelibs/browser/process-production.js",
+    "react": "https://ga.jspm.io/npm:react@18.2.0/index.js",
+    "react-dom": "https://ga.jspm.io/npm:react-dom@18.2.0/index.js",
+    "react/jsx-runtime": "https://ga.jspm.io/npm:react@18.2.0/jsx-runtime.js",
+    "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js"
+  }
+}
