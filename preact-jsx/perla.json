@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/dev/perla.schema.json",
+  "index": "./index.html",
+  "mountDirectories": {
+    "/src": "./src"
+  },
+  "esbuild": {
+    "jsxAutomatic": true,
+    "jsxImportSource": "preact"
+  },
+  "dependencies": [
+    {
+      "name": "preact",
+      "version": "10.11.3"
+    }
+  ],
+  "devDependencies": []
+}

@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "preact": "https://cdn.skypack.dev/pin/preact@v10.7.1-CXcphf8iRlm3GJGwMcQa/mode=imports,min/optimized/preact.js"
-  },
-  "scopes": {}
-}
