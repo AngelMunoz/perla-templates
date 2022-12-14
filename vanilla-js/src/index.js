@@ -1,46 +1,96 @@
-import './index.css';
+import "./index.css";
 
 //@ts-ignore
-import todos from './todos.json?module';
+import todos from "./todos.json?module";
 
 /**
- * 
- * @param {Todo} item 
+ *
+ * @param {string} name
+ * @param {Map<string, string>} attributes
+ * @param {Node[]} children
+ */
+function el(name, attributes = new Map(), children = []) {
+  const el = document.createElement(name);
+  for (const [attribute, value] of attributes) {
+    el.setAttribute(attribute, value);
+  }
+
+  for (const child of children) {
+    el.appendChild(child);
+  }
+  return el;
+}
+
+/**
+ * @param {string} text
+ */
+function text(text) {
+  return document.createTextNode(text);
+}
+
+/**
+ *
+ * @param {Todo} item
  */
 function todoItem(item) {
-    const li = document.createElement('li');
-    li.innerText = `${item.title} - ${item.done ? 'done' : 'pending'}`;
-    return li;
+  return el("li", new Map([["class", "todo-list__item"]]), [
+    text(`${item.title} - ${item.done ? "done" : "pending"}`),
+  ]);
 }
 
 /**
- * 
- * @param {Todo[]} items 
+ *
+ * @param {Todo[]} items
  */
 function todoList(items) {
-    const ul = document.createElement('ul');
-    for (const item of items.map(todoItem)) {
-        ul.appendChild(item);
-    }
-    return ul;
+  return el("ul", new Map([["class", "todo-list"]]), items.map(todoItem));
 }
 
-function h1(text) {
-    const h1 = document.createElement('h1');
-    h1.innerText = text;
-    return h1;
+const styles = new CSSStyleSheet();
+
+styles.replaceSync(`
+:host {
+  --color: rebeccapurple;
+  --border: 2px solid var(--color);
 }
+
+.main {
+    font-weight: thin;
+}
+
+.todo-list {
+  border: var(--border);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.todo-list__item {
+  --color: tomato;
+  border: 1px groove var(--color);
+  margin: 1em;
+  padding: 0.5em;
+}
+`);
 
 class MyApp extends HTMLElement {
-
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot?.appendChild(h1("Welcome to the vanilla JS sample :)"));
-        this.shadowRoot?.appendChild(todoList(todos));
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.adoptedStyleSheets = [styles];
+    this.shadowRoot.appendChild(
+      el(
+        "main",
+        new Map([
+          ["data-name", "main-element"],
+          ["class", "main"],
+        ]),
+        [
+          el("h1", undefined, [text("Welcome to the vanilla JS sample :)")]),
+          todoList(todos),
+        ]
+      )
+    );
+  }
 }
 
-
-//@ts-ignore
 customElements.define("my-app", MyApp);

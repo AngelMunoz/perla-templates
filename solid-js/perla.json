@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/dev/perla.schema.json",
+  "index": "./index.html",
+  "mountDirectories": {
+    "/src": "./src"
+  },
+  "build": {
+    "includes": [
+      "src/todos.json"
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "solid-js",
+      "version": "1.6.4"
+    }
+  ],
+  "devDependencies": []
+}
