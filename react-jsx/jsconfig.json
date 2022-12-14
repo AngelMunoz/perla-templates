@@ -18,8 +18,8 @@
   "typeAcquisition": {
     "enable": true,
     "include": [
-      "preact",
-      "preact/jsx-runtime"
+      "react",
+      "react/jsx-runtime"
     ]
   }
 }
