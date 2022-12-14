@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "preact": "https://ga.jspm.io/npm:preact@10.11.3/dist/preact.module.js",
+    "preact/jsx-runtime": "https://ga.jspm.io/npm:preact@10.11.3/jsx-runtime/dist/jsxRuntime.module.js"
+  }
+}

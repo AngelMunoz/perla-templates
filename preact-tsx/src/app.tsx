@@ -1,4 +1,4 @@
-import { Logo } from './logo.jsx'
+import { Logo } from "./logo.js";
 
 export function App() {
   return (
@@ -16,5 +16,5 @@ export function App() {
         </a>
       </p>
     </>
-  )
+  );
 }
