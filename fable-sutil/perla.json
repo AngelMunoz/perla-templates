@@ -1,7 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/dev/perla.schema.json",
   "index": "./index.html",
-  "runConfiguration": "production",
   "fable": {
     "project": "./src/App.fsproj"
   },
