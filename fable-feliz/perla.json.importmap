@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "date-fns": "https://ga.jspm.io/npm:date-fns@2.29.3/esm/index.js",
+    "react": "https://ga.jspm.io/npm:react@18.2.0/index.js",
+    "react-dom": "https://ga.jspm.io/npm:react-dom@18.2.0/index.js",
+    "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.2.0/client.js",
+    "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js"
+  }
+}

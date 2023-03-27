@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v1.0.0-beta-011/perla.schema.json",
+  "index": "./index.html",
+  "fable": {
+    "project": "./src/App.fsproj",
+    "sourceMaps": true
+  },
+  "mountDirectories": {
+    "/src": "./src"
+  },
+  "dependencies": [
+    {
+      "name": "date-fns",
+      "version": "2.29.3"
+    },
+    {
+      "name": "react",
+      "version": "18.2.0"
+    },
+    {
+      "name": "react-dom",
+      "version": "18.2.0"
+    }
+  ],
+  "devDependencies": []
+}
