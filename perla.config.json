@@ -8,6 +8,13 @@
     "group": "perla.templates",
     "templates": [
         {
+            "id": "basic",
+            "name": "Basic Template",
+            "shortname": "basic",
+            "path": "./basic",
+            "description": "Just perla.json and index.html, nothing more, nothing less."
+        },
+        {
             "id": "fable.feliz",
             "name": "Fable Feliz",
             "shortname": "ff",

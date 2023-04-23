@@ -3,7 +3,7 @@
   "isRoot": true,
   "tools": {
     "perla": {
-      "version": "1.0.0-beta-012",
+      "version": "1.0.0-beta-020",
       "commands": [
         "perla"
       ]

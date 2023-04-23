@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/dev/perla.schema.json",
+  "runConfiguration": "production",
+  "provider": "jspm",
+  "paths": {},
+  "dependencies": []
+}
