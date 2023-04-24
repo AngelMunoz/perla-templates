@@ -17,21 +17,28 @@
         {
             "id": "fable.feliz",
             "name": "Fable Feliz",
-            "shortname": "ff",
+            "shortname": "feliz",
             "path": "./fable-feliz",
             "description": "Fable Compiler + Feliz React SPA template"
         },
         {
             "id": "fable.lit",
             "name": "Fable Lit",
-            "shortname": "fl",
+            "shortname": "flit",
             "path": "./fable-feliz",
             "description": "Fable Compiler + Lit SPA template"
         },
         {
+            "id": "fable.vide",
+            "name": "Fable Vide",
+            "shortname": "fvide",
+            "path": "./fable-vide",
+            "description": "Fable Compiler + Vide F# Framework SPA template"
+        },
+        {
             "id": "fable.sutil",
             "name": "Fable Sutil",
-            "shortname": "fs",
+            "shortname": "fsutil",
             "path": "./fable-sutil",
             "description": "Fable Compiler + Sutil F# Framework SPA template"
         },
