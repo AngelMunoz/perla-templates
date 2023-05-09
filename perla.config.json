@@ -25,7 +25,7 @@
             "id": "fable.lit",
             "name": "Fable Lit",
             "shortname": "flit",
-            "path": "./fable-feliz",
+            "path": "./fable-lit",
             "description": "Fable Compiler + Lit SPA template"
         },
         {
