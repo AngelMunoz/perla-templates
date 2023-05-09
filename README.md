@@ -8,9 +8,7 @@ This repository is now part of Perla's [scaffolding features](https://perla-docs
 usage example:
 
 ```sh
-# run once after installing perla for the first time
-perla new 
-# once templates are downloaded you can run
+# Running perla commands for the first time ask or ensure templates are currently installed
 perla new sample -t flit # fable-lit
 cd sample && perla serve
 ```
