@@ -1,17 +1,8 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v0.21.0/perla.schema.json",
-  "index": "./index.html",
-  "devServer": {
-    "liveReload": true,
-    "mountDirectories": {
-      "./src": "/src"
-    }
-  },
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/fs-rework/perla.schema.json",
+  "schema-version": "2025-07",
+  "provider": "jspm",
   "build": {
-    "copyPaths": {
-      "includes": [
-        "./src/todos.json"
-      ]
-    }
+    "includes": ["./src/todos.json"]
   }
 }

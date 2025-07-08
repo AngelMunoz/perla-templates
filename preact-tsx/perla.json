@@ -1,18 +1,12 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v1.0.0-beta-024/perla.schema.json",
-  "index": "./index.html",
-  "mountDirectories": {
-    "/src": "./src"
-  },
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/fs-rework/perla.schema.json",
+  "schema-version": "2025-07",
   "esbuild": {
     "jsxAutomatic": true,
     "jsxImportSource": "preact"
   },
-  "dependencies": [
-    {
-      "name": "preact",
-      "version": "10.11.3"
-    }
-  ],
-  "devDependencies": []
+  "dependencies": {
+    "preact": "10.11.3"
+  },
+  "plugins": ["perla-esbuild-plugin"]
 }

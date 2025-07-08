@@ -1,19 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v1.0.0-beta-024/perla.schema.json",
-  "index": "./index.html",
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/fs-rework/perla.schema.json",
+  "schema-version": "2025-07",
   "provider": "jspm",
-  "runConfiguration": "production",
   "fable": {
-    "project": "./src/App.fsproj"
+    "project": "./src/App.fsproj",
+    "sourceMaps": true
   },
-  "dependencies": [
-    {
-      "name": "lit",
-      "version": "2.5.0"
-    },
-    {
-      "name": "lit-html",
-      "version": "2.5.0"
-    }
-  ]
+  "dependencies": {
+    "lit": "2.5.0",
+    "lit-html": "2.5.0"
+  }
 }
