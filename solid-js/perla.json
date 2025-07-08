@@ -1,19 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v1.0.0-beta-024/perla.schema.json",
-  "index": "./index.html",
-  "mountDirectories": {
-    "/src": "./src"
-  },
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/fs-rework/perla.schema.json",
+  "schema-version": "2025-07",
+  "provider": "jspm",
   "build": {
-    "includes": [
-      "src/todos.json"
-    ]
+    "includes": ["src/todos.json"]
   },
-  "dependencies": [
-    {
-      "name": "solid-js",
-      "version": "1.6.4"
-    }
-  ],
-  "devDependencies": []
+  "dependencies": {
+    "solid-js": "1.6.4",
+    "solid-js/web": "1.6.4",
+    "solid-js/html": "1.6.4"
+  }
 }

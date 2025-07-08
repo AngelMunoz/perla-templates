@@ -1,21 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v1.0.0-beta-024/perla.schema.json",
-  "index": "./index.html",
-  "mountDirectories": {
-    "/src": "./src"
-  },
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/fs-rework/perla.schema.json",
+  "schema-version": "2025-07",
+  "provider": "jspm",
+  "plugins": ["perla-esbuild-plugin"],
   "esbuild": {
     "jsxAutomatic": true
   },
-  "dependencies": [
-    {
-      "name": "react",
-      "version": "18.2.0"
-    },
-    {
-      "name": "react-dom",
-      "version": "18.2.0"
-    }
-  ],
-  "devDependencies": []
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
 }
